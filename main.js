@@ -23,7 +23,7 @@ const query = async (data) => {
     
     return result;
   } catch (error) {
-    alert('erro interno na api :(')
+    alert('erro interno na api :')
   }finally{
     completeButton.disabled = false;
   }
