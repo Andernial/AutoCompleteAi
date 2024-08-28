@@ -2,6 +2,9 @@ const completeButton = document.getElementById('send');
 const userInput = document.getElementById('textInput');
 const screen = document.getElementById('screen');
 
+const apiKey = 'sua apiKey'
+
+
 const query = async (data) => {
   try {
     completeButton.disabled = true;
@@ -9,7 +12,7 @@ const query = async (data) => {
       "https://api-inference.huggingface.co/models/bigcode/starcoder2-3b",
       {
         headers: {
-          Authorization: "Bearer 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",
+          Authorization: `Bearer ${apiKey}`,
           "Content-Type": "application/json",
         },
         method: "POST",
